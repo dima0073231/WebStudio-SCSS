@@ -1,0 +1,145 @@
+.header{
+    padding: 24px 0 25px;
+}
+.header-block{
+    display: flex;
+    justify-content:space-between;
+    width: 518px;
+    align-items: center;
+}
+.feature-list{
+    display:flex;
+    gap: 30px;
+    
+}
+.box-list{
+    display: flex;
+    justify-content: space-around;
+}
+.team-list{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+
+.contact-list{
+        display: flex;
+        gap: 50px;
+}
+.contact-list-item{
+    display: flex;
+align-items: center;
+animation-name:rotateInDownRight;
+animation-duration: 1s;
+}
+.contact-img{
+    fill: #757575;
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.contact-text:hover{
+    color: var(--blue-text);
+}
+
+.contact-text:hover .contact-img {
+    fill: #2196F3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.contact-list-item:hover{
+    fill: var(--blue-text);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.header-logo-link {
+    color:var(--blue-text);
+    font-size: 26px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    word-wrap: break-word;
+}
+
+.header-logo-studio {
+    color:var(--gray-text);
+    font-size: 26px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    word-wrap: break-word;
+}
+.header-logo-studio:hover{
+    background-color: var(--blue-text);
+    fill: #2196F3;
+}
+
+.navigation {
+    color: var(--gray-text);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    word-wrap: break-word;
+}
+.navigation-list{
+    display: flex;
+    gap: 50px;
+}
+.navigation-link:hover{
+    color: #2196F3;
+}
+
+.navigation-link {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    word-wrap: break-word;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.current{
+    color: var(--blue-text);
+    position: relative;
+}
+ .current::after{
+    content: "";
+    position: absolute;
+   display: block;
+    height: 5px;
+    width: 100%;
+    background-color:var(--blue-text);
+    border-radius: 2px;
+    left: 0px;
+    bottom: -33px;
+}
+.other{
+    position: relative;
+}
+.other::after{
+    content: "";
+    position: absolute;
+    bottom: -33px;
+   display: block;
+   background-color: var(--blue-text);
+    width: 0;
+    height: 5px;
+    border-radius: 2px;
+    left: 0; 
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.other:hover::after{
+    width: 100%;
+} 
+
+
+.contact-block {
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    word-wrap: break-word;
+}

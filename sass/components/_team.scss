@@ -1,0 +1,96 @@
+.team{
+    padding:94px 0 ;
+    background-color: var(--team-bg);
+}
+.team-list-item{
+    background-color:var(--white-text);
+    padding-bottom:100;
+   background-repeat: no-repeat;
+   height: 430px;
+   border-radius: 5px;
+   margin-right: 30px;
+ align-items: center; 
+}
+
+.team-title {
+    color: var(--gray-text);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.social-list{
+    display: flex;
+    
+   
+    padding-left: 23px;
+    margin-top: 10px;
+    animation-name: rotateInUpLeft;
+    animation-duration: 5s;
+
+}
+.conect-list{
+    display: flex;
+    gap: 10px;
+    
+    
+}
+.connect-text{
+    color: var(--white-text);
+    font-weight: 700;
+font-size: 14px;
+    letter-spacing: 0.03px;
+    word-wrap:break-word;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+.team-item-title {
+    color: var(--gray-text);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.team-contact{
+    padding-right:175px;
+    padding-top: 15px;
+}
+
+.team-text {
+    font-size: 16px;
+ font-weight: 400;
+    letter-spacing: 0.48px;
+    word-wrap: break-word;
+}
+.team-svg{
+    display: inline-flex;
+    background-color: #ffffff;
+    align-items: center;
+  width: 45px;
+  height: 45px;
+    border: none;
+    fill:#AFB1B8;
+    border-radius: 50%;
+   justify-content: center;
+    margin: 5px;
+    
+    position: relative;
+border: 2px solid none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-img{
+  width: 20px;
+  height: 20px; 
+  
+}
+.team-svg:hover{
+    background-color: var(--blue-text);
+    fill: #FFF;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
