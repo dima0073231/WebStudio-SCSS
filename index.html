@@ -25,22 +25,22 @@
 <body>
     <header class="header" >
         <div class="container">
-            <nav class="header-block" class="header" data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom">
-                <a href="./index.html" class="header-logo-link">
-                    Web<span class="header-logo-studio">Studio</span>
+          <div class="header-spacer">
+          
+                <a href="./index.html" class=" logo header-spacer__logo">
+                    Web<span class="header-spacer__logo header-spacer__logo--studio">Studio</span>
                 </a>
                 <nav class="navigation">
                     <ul class="navigation-list">
-                        <li class=" navigation-list-item current">
+                        <li class="navigation-list__item navigation-list__item--current">
                             <a href="./index.html" class=" navigation-link">Студія
                             </a>
                         </li>
-                        <li class=" navigation-list-item other">
+                        <li class="navigation-list__item navigation-list__item--other">
                             <a href="./porfolio.html" class="navigation-link">Портфоліо
                             </a>
                         </li>
-                        <li class=" navigation-list-item other">
+                        <li class="navigation-list__item navigation-list__item--other">
                             <a href="#" class=" navigation-link">Контакти
                             </a>
                         </li>
@@ -48,13 +48,13 @@
 
                 </nav>
 
-            </nav>
+            </div>
 
             <div class="contact-block">
                 <ul class="contact-list">
-                    <li class="contact-list-item">
-                        <a href="mailto:info@devstudio.com" class="contact-text" >
-                            <svg class="contact-img" width="16" height="12">
+                    <li class="contact-list__item">
+                        <a href="mailto:info@devstudio.com" class="contact-list__link" >
+                            <svg class="contact-list__img" width="16" height="12">
                             <use   href="./images/symboldefs.svg#email"></use>
                            
                              </svg>
@@ -62,9 +62,9 @@
                             </a>
                             
                        </li>
-                       <li class="contact-list-item">
-                        <a href="mailto:+380961111111" class="contact-text" >
-                            <svg class="contact-img" width="10" height="16">
+                       <li class="contact-list__item">
+                        <a href="mailto:+380961111111" class="contact-list__link" >
+                            <svg class="contact-list__img" width="10" height="16">
                             <use href="./images/symbol-defs.svg#nummer"></use>
                            
                              </svg>
@@ -80,8 +80,8 @@
     <main class="main">
         <section class="hero"  data-aos="zoom-out-up">
             <div class="container">
-                <h1 class="hero_title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero_btn" data-modal-open>Замовити послугу</button>
+                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+                <button type="button" class="button hero__btn" data-modal-open>Замовити послугу</button>
             <div class="backdrop is-hidden"data-modal>
                 <form class="modal">
                     <button class="div-modal-bth-close"data-modal-close>
@@ -89,35 +89,35 @@
                             <use href="./images/symboldefs.svg#close"></use>
                         </svg>
                     </button>
-                <h3 class="modal-title">Залишате свої дані, ми вам перезвонимо</h3>
+                <h3 class="modal__title">Залишате свої дані, ми вам перезвонимо</h3>
                 <ul class="modal-list">
-                    <li class="modal-list-item">
-                        <label for="name" class="modal-list-name">Ім'я
-                        <input type="text" class="modal-list-input">
-                        <a class="modal-svg">
-                        <svg class="modal-svg">
+                    <li class="modal-list__item">
+                        <label for="name" class="modal-list__name">Ім'я
+                        <input type="text" class="modal-list__input">
+                        
+                        <svg class="modal-list__svg">
                             <use href="./images/symboldefs.svg#name"></use>
                         </svg>
                     </label>
-                </a>
+                
                     </li>
-                    <li class="modal-list-item">
-                        <label for="tel" class="modal-list-name">Телефон
-                        <input type="tel" class="modal-list-input">
-                        <svg class="modal-svg">
+                    <li class="modal-list__item">
+                        <label for="tel" class="modal-list__name">Телефон
+                        <input type="tel" class="modal-list__input">
+                        <svg class="modal-list__svg">
                             <use href="./images/symboldefs.svg#phone"></use>
                         </svg>
                     </label>
-                                <li class="modal-list-item">
-                                    <label for="email" class="modal-list-name">Пошта
-                                    <input type="email" class="modal-list-input">
-                                    <svg class="modal-svg">
+                                <li class="modal-list__item">
+                                    <label for="email" class="modal-list__name">Пошта
+                                    <input type="email" class="modal-list__input">
+                                    <svg class="modal-list__svg">
                                         <use href="./images/symboldefs.svg#emaill"></use>
                                     </svg>
                                 </label>
-                                    <li class="modal-list-item">
-                                        <label for="com" class="modal-list-name">Коментар
-                                        <textarea  id="comment" placeholder="Введіть текст" class="modal-textarea"></textarea>
+                                    <li class="modal-list__item">
+                                        <label for="com" class="modal-list__name">Коментар
+                                        <textarea  id="comment" placeholder="Введіть текст" class="modal-list__textarea"></textarea>
                                     </label>
                                     </li>
                                 </ul>
@@ -135,27 +135,27 @@
         <section class="feature"  data-aos="zoom-out-up">
             <div class="container">
                 <ul class="feature-list">
-                    <li class="feature-list-item">
-                        <h6 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h6>
-                        <p class="feature-text">
+                    <li class="feature-list__item">
+                        <h6 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h6>
+                        <p class="feature-list__text">
                             Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                         </p>
                     </li>
-                    <li class="feature-list-item">
-                        <h6 class="feature-title">ПУНКТУАЛЬНІСТЬ</h6>
-                        <p class="feature-text">
+                    <li class="feature-list__item">
+                        <h6 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h6>
+                        <p class="feature-list__text">
                             Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                         </p>
                     </li>
-                    <li class="feature-list-item">
-                        <h6 class="feature-title">ПЛАНУВАННЯ</h6>
-                        <p class="feature-text">
+                    <li class="feature-list__item">
+                        <h6 class="feature-list__title">ПЛАНУВАННЯ</h6>
+                        <p class="feature-list__text">
                             Так само консультація з широким активом значною мірою зумовлює.
                         </p>
                     </li>
-                    <li class="feature-list-item">
-                        <h6 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h6>
-                        <p class="feature-text">
+                    <li class="feature-list__item">
+                        <h6 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h6>
+                        <p class="feature-list__text">
                             Значимість цих проблем настільки очевидна, що реалізація планових завдань.
                         </p>
                     </li>
@@ -164,23 +164,23 @@
         </section>
         <section class="box"  data-aos="zoom-out-up">
             <div class="container">
-                <h3 class="box-title">Чим ми займаємося</h3>
+                <h3 class="box__title">Чим ми займаємося</h3>
                 <ul class="box-list">
-                    <li class="box-list-item">
-                        <img src="./images/block1_img1.jpg" alt="Notebook" width="370" class="section-box-img">
+                    <li class="box-list__item">
+                        <img src="./images/block1_img1.jpg" alt="Notebook" width="370" class="box-list__img">
                    
             </li>
                 
                 
         
-            <li class="box-list-item">
-                <img src="./images/block1_img2.jpg" alt="ceel" width="370" class="section-box-img">
+            <li class="box-list__item">
+                <img src="./images/block1_img2.jpg" alt="ceel" width="370" class="box-list__img">
             
                     
                 </li>
 
-                <li class="box-list-item">
-                    <img src="./images/block1_img3.jpg" alt="Tablet" width="370" class="section-box-img">
+                <li class="box-list__item">
+                    <img src="./images/block1_img3.jpg" alt="Tablet" width="370" class="box-list__img">
                 
                   
                 </li>
@@ -189,34 +189,34 @@
         </section>
         <section class="team"  data-aos="zoom-out-up">
             <div class="container">
-                <h3 class="team-title">Наша команда</h3>
+                <h3 class="team__title">Наша команда</h3>
                 <ul class="team-list">
-                    <li class="team-list-item">
-                        <img src="./images/block2_img1.jpg" alt="Ігор Дем'яненко" width="270" class="section-team-img">
-                        <h6 class="team-item-title">
+                    <li class="team-list__item">
+                        <img src="./images/block2_img1.jpg" alt="Ігор Дем'яненко" width="270" class="sectin-team-img">
+                        <h6 class="team-list__name">
                             Ігор Дем'яненко
                         </h6>
-                        <p class="team-text">
+                        <p class="team-list__work">
                             Product Designer
                         </p>
                         <ul class="social-list">
                             <li>
-                                <a  class="team-svg">
-                            <svg class="team-img" width="20px" height="20px">
+                                <a  class="social-list__link">
+                            <svg class="social-list__img " width="20px" height="20px">
                                     <use href="./images/symboldefs.svg#instagram"></use>
                                 </svg>
                             </a>
                                 <li>
-                                    <a class="team-svg">
+                                    <a class="social-list__link">
 
-                                <svg class="team-img" width="20px" height="20px">
+                                <svg class="social-list__img" width="20px" height="20px">
                                     <use href="./images/symboldefs.svg#twitter"></use>
                                 </svg>
                             </a>
                             </li>
                             <li>
-                                <a class="team-svg">
-                                <svg class="team-img" width="20px" height="20px">
+                                <a class="social-list__link">
+                                <svg class="social-list__img " width="20px" height="20px">
                                     <use href="./images/symboldefs.svg#facebook"></use>
                                 </svg>
                             </a>

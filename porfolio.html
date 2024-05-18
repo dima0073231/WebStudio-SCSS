@@ -19,28 +19,30 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./css/main.min.css">
+        <link rel="stylesheet" href="./css/portfolio.min.css">
 </head>
 
 <body>
-     <header class="header">
+    
+    <header class="header" >
         <div class="container">
-            <div class="header-block">
-                <a href="../index.html" class="header-logo-link">
-                    Web<span class="header-logo-studio">Studio</span>
+          <div class="header-spacer">
+          
+                <a href="./index.html" class=" logo header-spacer__logo">
+                    Web<span class="header-spacer__logo header-spacer__logo--studio">Studio</span>
                 </a>
                 <nav class="navigation">
                     <ul class="navigation-list">
-                        <li class="navigation-list-item other">
-                            <a href="../index.html" class="navigation-link">Студія
+                        <li class="navigation-list__item navigation-list__item--other">
+                            <a href="../index.html" class=" navigation-link">Студія
                             </a>
                         </li>
-                        <li class="navigation-list-item current">
-                            <a href="./portfolio.html" class="navigation-link">Портфоліо
+                        <li class="navigation-list__item navigation-list__item--current">
+                            <a href="./porfolio.html" class="navigation-link">Портфоліо
                             </a>
                         </li>
-                        <li class="navigation-list-item other">
-                            <a href="#" class="navigation-link">Контакти
+                        <li class="navigation-list__item navigation-list__item--other">
+                            <a href="#" class=" navigation-link">Контакти
                             </a>
                         </li>
                     </ul>
@@ -51,26 +53,31 @@
 
             <div class="contact-block">
                 <ul class="contact-list">
-                    <li class="contact-list-item">
-                        <a href="mailto:info@devstudio.com" class="contact-text" >
-                            <svg class="contact-img" width="16" height="12">
-                            <use   class="contact-use-svg" href="../images/symboldefs.svg#email"></use>
+                    <li class="contact-list__item">
+                        <a href="mailto:info@devstudio.com" class="contact-list__link" >
+                            <svg class="contact-list__img" width="16" height="12">
+                            <use   href="./images/symboldefs.svg#email"></use>
                            
                              </svg>
-                            info@devstudio.com</a>
+                             info@devstudio.com
+                            </a>
+                            
                        </li>
-                    <li class="contact-list-item">
-                        <a href="tel:380961111111" class="contact-text">
-                            <svg class="contact-img" width="10" height="16">
-                                <use class="contact-use-svg" href="../images/symbol-defs.svg#nummer"></use>
-                               
-                            </svg>
-                         +380961111111</a>
-                    </li>
+                       <li class="contact-list__item">
+                        <a href="mailto:+380961111111" class="contact-list__link" >
+                            <svg class="contact-list__img" width="10" height="16">
+                            <use href="./images/symbol-defs.svg#nummer"></use>
+                           
+                             </svg>
+                             +380961111111
+                            </a>
+                           
+                       </li>
                 </ul>
             </div>
         </div>
     </header>
+
 
     <main class="main">
         <div class="container">
