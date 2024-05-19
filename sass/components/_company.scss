@@ -7,11 +7,11 @@
     align-items: center;
     
 }
-.company-svg{
+.company-list__svg{
    display: flex; 
 }
 
-.company-box-img{
+.company-list__img{
     width: 170px;
     height: 92px;
     border-radius: 4px;
@@ -24,7 +24,7 @@
     
     
 }
-   .company-box-img:hover{
+   .company-list__img:hover{
     border:2px solid #2196F3;
     fill: #2196F3;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 

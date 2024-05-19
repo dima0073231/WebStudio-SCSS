@@ -37,7 +37,7 @@
     
     
 }
-.connect-text{
+.footer-join__title{
     color: var(--white-text);
     font-weight: 700;
 font-size: 14px;
@@ -89,7 +89,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic
   height: 20px; 
   
 }
-.team-list__work:hover{
+.social-list__link:hover{
     background-color: var(--blue-text);
     fill: #FFF;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 

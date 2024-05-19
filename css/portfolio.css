@@ -63,7 +63,7 @@ button {
   position: relative;
 }
 
-.footer-left {
+.footer__left {
   margin-right: 95px;
 }
 
@@ -72,7 +72,7 @@ button {
   padding-top: 15px;
 }
 
-.footer-logo-web {
+.footer-logo__web {
   color: var(--blue-text);
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -83,7 +83,17 @@ button {
   display: block;
 }
 
-.footer-logo-studio {
+.footer-join__title {
+  color: var(--white-text);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03px;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-logo__studio {
   color: var(--white-text);
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -99,13 +109,13 @@ address {
   gap: 9px;
 }
 
-.social-img {
+.social-list__icon--footer {
   width: 20px;
   height: 20px;
   fill: #fff;
 }
 
-.social-svg {
+.social-list__svg {
   background-color: rgba(255, 255, 255, 0.062745098);
   display: flex;
   justify-content: center;
@@ -116,12 +126,12 @@ address {
   border-radius: 50%;
 }
 
-.social-svg:hover {
+.social-list__svg:hover {
   background-color: var(--blue-text);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-text {
+.footer__text {
   color: var(--white-text);
   font-size: 14px;
   font-weight: 400;
@@ -135,7 +145,7 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact {
+.footer__contact {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
@@ -149,12 +159,12 @@ address {
   padding-top: 15px;
 }
 
-.footer-right-form {
+.footer-right__form {
   display: flex;
   align-items: flex-end;
 }
 
-.footer-right-title {
+.footer-right__title {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -162,7 +172,7 @@ address {
   margin-bottom: 20px;
 }
 
-.footer-right-input {
+.footer-right__input {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   width: 360px;
@@ -179,7 +189,7 @@ address {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-right-btn {
+.footer-right__btn {
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -197,7 +207,7 @@ address {
   border: none;
 }
 
-.footer-right-svg {
+.footer-right__svg {
   width: 21px;
   height: 21px;
   top: 1px;
@@ -373,7 +383,7 @@ address {
        column-gap: 8px;
 }
 
-.portfolio-filters-btn {
+.portfolio-filters-list__btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -395,7 +405,7 @@ address {
     transform: translateY(-30px);
   }
 }
-.portfolio-filters-btn:hover {
+.portfolio-filters-list__btn:hover {
   border-color: var(--blue-text);
   background-color: var(--blue-text);
   color: var(--white-text);
@@ -411,7 +421,7 @@ address {
   justify-content: space-between;
 }
 
-.portfolio-list-item {
+.portfolio-list__item {
   border: 1px solid #EEE;
   background-color: #FFF;
   flex-basis: calc((100% - 60px) / 3);
@@ -420,7 +430,7 @@ address {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover .overlay-informatoin {
+.portfolio-list__item:hover .overlay-informatoin {
   transform: translateX(0);
 }
 
@@ -436,7 +446,7 @@ address {
   padding: 63px 24px;
 }
 
-.text-overlay {
+.overlay-informatoin__text {
   font-weight: 14;
   font-size: 18px;
   line-height: 1.5;
@@ -449,15 +459,15 @@ address {
   overflow: hidden;
 }
 
-.portfolio-img {
+.portfolio__img {
   gap: 30px;
 }
 
-.portfolio-block-text {
+.portfolio-list__text {
   padding: 23px;
 }
 
-.portfolio-title {
+.portfolio-list__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -465,7 +475,7 @@ address {
   color: var(--gray-text);
 }
 
-.portfolio-text {
+.portfolio-list__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
