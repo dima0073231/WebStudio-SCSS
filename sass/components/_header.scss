@@ -1,47 +1,56 @@
-.header{
+.header {
     padding: 24px 0 25px;
 }
-.header-spacer{
+
+.header-spacer {
     display: flex;
-    justify-content:space-between;
-     width: 518px;
+    justify-content: space-between;
+    width: 518px;
     align-items: center;
 }
-.feature-list{
-    display:flex;
+
+.feature-list {
+    display: flex;
     gap: 30px;
-    
+
 }
-.box-list{
+
+.box-list {
     display: flex;
     justify-content: space-around;
 }
-.team-list{
+
+.team-list {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    
+
 }
 
 
-.contact-list{
-        display: flex;
-        gap: 50px;
-}
-.contact-list__item{
+.contact-list {
     display: flex;
-align-items: center;
-animation-name:rotateInDownRight;
-animation-duration: 1s;
+    gap: 50px;
 }
-.contact-list__img{
+
+.contact-list__item {
+    display: flex;
+    align-items: center;
+    animation-name: rotateInDownRight;
+    animation-duration: 1s;
+}
+.contact-list__img {
     fill: #757575;
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
-.contact-list__link:hover{
-    color: var(--blue-text);
+.contact-list__link{
+    fill: getColor("main-text");
+}
+
+.contact-list__link:hover {
+    color: getColor("blue-text");
 }
 
 .contact-list__link:hover .contact-list__img {
@@ -49,43 +58,48 @@ animation-duration: 1s;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.contact-list__item:hover{
-    fill: var(--blue-text);
+
+.contact-list__item:hover {
+    fill: getColor("white-text");
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo{
+.logo {
     font-size: 26px;
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     letter-spacing: 0.78px;
     word-wrap: break-word;
 }
+
 .header-spacer__logo {
-    color:var(--blue-text);
+    color: getColor("blue-text");
 }
 
 
 .header-spacer__logo--studio {
-    color:var(--gray-text);
+    color: getColor("gray-text");
 }
-.header-logo-studio:hover{
-    background-color: var(--blue-text);
+
+.header-logo-studio:hover {
+    background-color: getColor("blue-text");
     fill: #2196F3;
 }
 
 .navigation {
-    color: var(--gray-text);
+    color: getColor("gray-text");
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
     word-wrap: break-word;
 }
-.navigation-list{
+
+.navigation-list {
     display: flex;
     gap: 50px;
 }
-.navigation-link:hover{
+
+.navigation-link:hover {
     color: #2196F3;
 }
 
@@ -95,42 +109,47 @@ animation-duration: 1s;
     letter-spacing: 0.28px;
     word-wrap: break-word;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
-.navigation-list__item--current{
-    color: var(--blue-text);
+
+.navigation-list__item--current {
+    color: getColor("blue-text");
     position: relative;
 }
- .navigation-list__item--current::after{
+
+.navigation-list__item--current::after {
     content: "";
     position: absolute;
-   display: block;
+    display: block;
     height: 5px;
     width: 100%;
-    background-color:var(--blue-text);
+    background-color: getColor("blue-text");
     border-radius: 2px;
     left: 0px;
     bottom: -33px;
 }
-.navigation-list__item--other{
+
+.navigation-list__item--other {
     position: relative;
 }
-.navigation-list__item--other::after{
+
+.navigation-list__item--other::after {
     content: "";
     position: absolute;
     bottom: -33px;
-   display: block;
-   background-color: var(--blue-text);
+    display: block;
+    background-color: getColor("blue-text");
     width: 0;
     height: 5px;
     border-radius: 2px;
-    left: 0; 
+    left: 0;
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.navigation-list__item--other:hover::after{
+
+.navigation-list__item--other:hover::after {
     width: 100%;
-} 
+}
 
 
 .contact-block {

@@ -1,14 +1,26 @@
-:root {
-    --main-text: #757575;
-    --gray-text: #212121;
-    --blue-text: #2196F3;
-    --white-text: #ffffff;
-    --team-bg: #F5F4FA;
-}
+// :root {
+//     --main-text: #757575;
+//     --gray-text: #212121;
+//     --blue-text: #2196F3;
+//     --white-text: #ffffff;
+//     --team-bg: #F5F4FA;
+// }
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: normal;
     font-style: normal;
     color: var(--main-text);       
+}
+$colors: (
+    "main-text":#757575,
+    "gray-text":#212121,
+    "blue-text":#2196F3,
+    "white-text":#fff,
+    "team-bg": #F5F4FA,
+
+);
+@function getColor($key){
+    @return map-get($colors,$key);
 }

@@ -5,7 +5,7 @@
 }
 
 .hero__title {
-    color: var(--white-text);
+    color: getColor("white-text");
     font-size: 44px;
     font-weight: 900;
     text-transform: uppercase;
@@ -20,7 +20,7 @@
     
 
 .hero__btn {
-    color: var(--white-text);
+    color: getColor("white-text");
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
@@ -63,7 +63,7 @@ display:block;
     font-size: 20px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--gray-text);
+    color: getColor("gray-text");
     margin-bottom: 12px;
 
 }
@@ -74,7 +74,7 @@ display:block;
 }
 .modal-list__name{
     letter-spacing: 0.01em;
-    color: var(--gray-text);
+    color: getColor("gray-text");
     padding-right: 7px;
     
     font-size: 12px;
@@ -99,11 +99,11 @@ display:block;
     top: -27px;
 }
 .modal-list__input:hover{
-    border-color: var(--blue-text);
+    border-color: getColor("blue-text");
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-list__input:hover + .modal-list__svg{
-    fill: var(--blue-text);
+    fill: getColor("blue-text");
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-list__textarea{
@@ -126,8 +126,8 @@ display:block;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--blue-text);
-    border: 3px solid var(--blue-text);
+    background-color: getColor("blue-text");
+    border: 3px solid getColor("blue-text");
 
 }
 .div-modal__text{
@@ -135,12 +135,12 @@ display:block;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--main-text);
+    color: getColor("main-text");
     text-align: center;
     margin-bottom: 40px;
 }
 .div-modal__link{
-    color: var(--blue-text);
+    color: getColor("blue-text");
     text-decoration: underline;
 }
 .modal__submit{
@@ -156,7 +156,7 @@ display:block;
     margin: 0 auto;
     cursor: pointer;
     letter-spacing: 0.06em;
-    color: var(--white-text);
+    color: getColor("white-text");
     background-color: #2196F3;
 }
 .modal__bth-close{
@@ -166,18 +166,18 @@ display:block;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color:var(--white-text);
+    background-color:getColor("white-text");
     cursor: pointer;
     border: 1px solid #1e1e1e10 ;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__svg-close{
-    fill: var(--gray-text);
+    fill: getColor("gray-text");
     width: 11px;
     height: 11px;
 }
 .modal__svg-close:hover{
-    fill: var(--blue-text);
+    fill: getColor("blue-text");
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }

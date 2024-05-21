@@ -3,7 +3,7 @@
 }
 
 .feature-list__title {
-    color: var(--gray-text);
+    color: getColor("gray-text");
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -40,10 +40,10 @@
     background-image: url(../images/astronaut1.png);
      
  }
-.feature__text {
+.feature-list__text {
 
     font-size: 14px;
-    
+    fill: #757575;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
