@@ -1,16 +1,42 @@
 .feature{
     padding: 94px 0;
 }
+.feature-list{
+   &__title {
+      color: getColor("gray-text");
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.42px;
+      word-wrap: break-word;
+      margin-bottom: 10px;
+  }
+ &__item::before{
+   content: "";
+      display: inline-block; 
+      width: 270px; 
+      height: 120px; 
+      border-radius: 4px;
+      background-color:#F5F4FA;
+      background-repeat:   no-repeat ; 
+      background-position: center;
+      margin-bottom: 30px; 
 
-.feature-list__title {
-    color: getColor("gray-text");
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.42px;
-    word-wrap: break-word;
-    margin-bottom: 10px;
+  
 }
+&__text {
+
+   font-size: 14px;
+  color: getColor("main-text");
+   font-weight: 400;
+   line-height: 1.71;
+   letter-spacing: 0.42px;
+   word-wrap: break-word;
+}
+
+
+}
+
 .feature-list__item::before{
      content: "";
         display: inline-block; 
@@ -24,28 +50,22 @@
 
     
 }
-.feature-list__item:nth-child(1)::before{
-   background-image: url(../images/antenna1.png);
-    
-}
-.feature-list__item:nth-child(2)::before{
-    background-image: url(../images/clock1.png);
-     
- }
- .feature-list__item:nth-child(3)::before{
-    background-image: url(../images/diagram1.png);
-     
- }
- .feature-list__item:nth-child(4)::before{
-    background-image: url(../images/astronaut1.png);
-     
- }
-.feature-list__text {
+.feature-list__item{
+   &:nth-child(1)::before{
+      background-image: url(../images/antenna1.png);
+       
+   }
+   &:nth-child(2)::before{
+      background-image: url(../images/clock1.png);
+       
+   }
+   &:nth-child(3)::before{
+      background-image: url(../images/diagram1.png);
+       
+   }
+   &:nth-child(4)::before{
+      background-image: url(../images/astronaut1.png);
+       
+   }
 
-    font-size: 14px;
-    fill: #757575;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-    word-wrap: break-word;
 }

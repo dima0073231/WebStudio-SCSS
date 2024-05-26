@@ -1,17 +1,18 @@
 .box{
     padding-bottom:94px;  
-}
-.box__title{
-    margin-bottom: 50px;
-    color: #212121;
-text-align: center;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-letter-spacing: 1.08px;
+    
+    &__title{
+        margin-bottom: 50px;
+        color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    }
 }
 .box-list{
-    __title{
+    &__title{
         margin-bottom: 50px;
         color: #212121;
     text-align: center;
@@ -51,14 +52,14 @@ letter-spacing: 1.08px;
 
 
 }
-
-
-.box-list__item:nth-child(1)::after{
-    content: "Десктопні додатки";
-}
-.box-list__item:nth-child(2)::after{
-    content: "Мобільні додатки";
-}
-.box-list__item:nth-child(3)::after{
-    content: "Дизайнерські рішення";
+.box-list__item{
+    &:nth-child(1)::after{
+        content: "Десктопні додатки";
+    }
+    &:nth-child(2)::after{
+        content: "Мобільні додатки";
+    }
+    &:nth-child(3)::after{
+        content: "Дизайнерські рішення";
+    }
 }
