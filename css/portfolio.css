@@ -81,7 +81,6 @@ button {
   margin-right: 90px;
   padding-top: 15px;
 }
-
 .footer-join__title {
   color: #fff;
   font-weight: 700;
@@ -92,13 +91,13 @@ button {
   text-transform: uppercase;
 }
 
-address {
+.address {
   font-style: normal;
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-address__text {
+.address__text {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -107,7 +106,7 @@ address__text {
   word-wrap: break-word;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-address__contact {
+.address__contact {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
@@ -117,12 +116,9 @@ address__contact {
   top: -80px;
 }
 
-.social-list__icon--footer {
-  width: 20px;
-  height: 20px;
-  fill: #fff;
+.social-list__item {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .social-list__svg {
   background-color: rgba(255, 255, 255, 0.062745098);
   display: flex;
@@ -134,25 +130,23 @@ address__contact {
   border: 2px solid none;
   border-radius: 50%;
 }
-
 .social-list__svg:hover {
   background-color: #2196F3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-list__item {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.social-list__icon--footer {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
 }
 
 .footer-right {
   padding-top: 15px;
 }
-
 .footer-right__form {
   display: flex;
   align-items: flex-end;
 }
-
 .footer-right__title {
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -160,7 +154,6 @@ address__contact {
   color: #fff;
   margin-bottom: 20px;
 }
-
 .footer-right__input {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
@@ -177,7 +170,6 @@ address__contact {
   background-color: rgba(255, 255, 255, 0.062745098);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer-right__btn {
   border-radius: 5px;
   display: flex;
@@ -195,7 +187,6 @@ address__contact {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
-
 .footer-right__svg {
   width: 21px;
   height: 21px;
@@ -372,7 +363,6 @@ address__contact {
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
-
 .portfolio-filters-list__btn {
   font-weight: 500;
   font-size: 16px;
@@ -386,6 +376,13 @@ address__contact {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio-filters-list__btn:hover {
+  border-color: #2196F3;
+  background-color: #2196F3;
+  color: #fff;
+  animation: btn 1s ease infinite alternate;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
 
 @keyframes btn {
   0% {
@@ -395,14 +392,6 @@ address__contact {
     transform: translateY(-30px);
   }
 }
-.portfolio-filters-list__btn:hover {
-  border-color: #2196F3;
-  background-color: #2196F3;
-  color: #fff;
-  animation: btn 1s ease infinite alternate;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -410,7 +399,6 @@ address__contact {
   row-gap: 30px;
   justify-content: space-between;
 }
-
 .portfolio-list__item {
   border: 1px solid #EEE;
   background-color: #FFF;
@@ -418,6 +406,24 @@ address__contact {
   padding-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-list__text {
+  padding: 23px;
+}
+.portfolio-list__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 6%;
+  color: #212121;
+}
+.portfolio-list__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 3%;
+  color: #757575;
+  padding-left: 20px;
 }
 
 .portfolio-list__item:hover .overlay-informatoin {
@@ -435,7 +441,6 @@ address__contact {
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
 }
-
 .overlay-informatoin__text {
   font-weight: 14;
   font-size: 18px;
@@ -451,27 +456,6 @@ address__contact {
 
 .portfolio__img {
   gap: 30px;
-}
-
-.portfolio-list__text {
-  padding: 23px;
-}
-
-.portfolio-list__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 6%;
-  color: #212121;
-}
-
-.portfolio-list__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 3%;
-  color: #757575;
-  padding-left: 20px;
 }
 
 .card::before {

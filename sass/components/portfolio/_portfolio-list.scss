@@ -4,18 +4,36 @@
     margin: 0 auto;
     row-gap: 30px;
     justify-content: space-between;
+    &__item {
+        border: 1px solid #EEE;
+        background-color: #FFF;
+        flex-basis: calc((100% - 60px) / 3);
+        padding-bottom:20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+       
+    }
+    &__text {
+        padding: 23px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 6%;
+        color: getColor("gray-text");
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 3%;
+        color: getColor("main-text");
+        padding-left: 20px;
+    }
 }
 
-.portfolio-list__item {
-    border: 1px solid #EEE;
-    background-color: #FFF;
-    flex-basis: calc((100% - 60px) / 3);
-    padding-bottom:20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-   
-}
  .portfolio-list__item:hover .overlay-informatoin{
     transform: translateX(0);
 } 
@@ -31,14 +49,14 @@ transition: transform 250ms ease;
 
 background-color:rgba(33, 150, 243, 0.9); 
 padding: 63px 24px;
-}
-.overlay-informatoin__text{
-     font-weight: 14;
-    font-size: 18px;
-    line-height: 1.5;
+&__text{
+    font-weight: 14;
+   font-size: 18px;
+   line-height: 1.5;
 letter-spacing: 0.03em;
-    color: white;
+   color: white;
 } 
+}
 .thumb{
     position:relative;
     overflow: hidden;
@@ -49,26 +67,8 @@ letter-spacing: 0.03em;
    gap: 30px;
 }
 
-.portfolio-list__text {
-    padding: 23px;
-}
 
-.portfolio-list__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 6%;
-    color: getColor("gray-text");
-}
 
-.portfolio-list__text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 3%;
-    color: getColor("main-text");
-    padding-left: 20px;
-}
 .card::before {
     content: ""; 
     display: block; 
