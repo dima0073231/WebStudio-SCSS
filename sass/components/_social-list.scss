@@ -1,36 +1,49 @@
 .social-list{
     display: flex;
-    
-   
-    padding-left: 23px;
-    margin-top: 10px;
     animation-name: rotateInUpLeft;
     animation-duration: 5s;
+    justify-content: center;
+    gap: 10px;
+    &__item{
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 50%;
+      overflow: hidden;
+  }
     &__link{
-        display: inline-flex;
-        background-color: #ffffff;
+        display:flex;
+        justify-content: center;
         align-items: center;
       width: 45px;
       height: 45px;
-        border: none;
-        fill:#AFB1B8;
-        border-radius: 50%;
-       justify-content: center;
-        margin: 5px;
-        
-        position: relative;
-    border: 2px solid none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
         background-color: getColor("blue-text");
-        fill: #FFF;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+       
+    }
+    &--team{
+      background-color: transparent;
+      
+    }
+    &--footer{
+      background-color: #ffffff10;
     }
     }
+
     &__img{
         width: 20px;
         height: 20px; 
+        &--team{
+        fill: getColor("black-text");
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &--footer{
+          fill: getColor("white-text");
+        }
+
         
       }
+      &__link:hover &__img--team,&__link:focus &__img--team{
+        fill: getColor("white-text");
 
+      }
 }

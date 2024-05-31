@@ -21,7 +21,7 @@
         line-height: 1.87;
         letter-spacing: 0.96px;
         word-wrap: break-word;
-        background-color: #2196F3;
+        background-color: getColor("blue-text");
         border-radius: 4px;
         width: 216px;
     height: 50px;
@@ -55,7 +55,7 @@
     width: 528px;
     padding: 40px;
     
-    background-color: #ffffff;
+    background-color: getColor("white-text");
     border-radius: 4px;
     &__title{
         font-family: "Roboto", sans-serif;
@@ -81,7 +81,7 @@
         cursor: pointer;
         letter-spacing: 0.06em;
         color: getColor("white-text");
-        background-color: #2196F3;
+        background-color:getColor("blue-text");
     }
     &__bth-close{
         position: absolute;

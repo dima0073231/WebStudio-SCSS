@@ -55,7 +55,7 @@
 }
 
 .contact-list__link:hover .contact-list__img {
-    fill: #2196F3;
+    fill:getColor("blue-text");
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -84,7 +84,7 @@
 
 .header-logo-studio:hover {
     background-color: getColor("blue-text");
-    fill: #2196F3;
+    fill: getColor("blue-text");
 }
 
 .navigation {
@@ -144,7 +144,7 @@
     word-wrap: break-word;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
-        color: #2196F3;
+        color:getColor("blue-text");
     }
 
 }

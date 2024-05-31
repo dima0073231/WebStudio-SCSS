@@ -5,7 +5,7 @@ body {
     font-weight: 400;
     line-height: normal;
     font-style: normal;
-    color: var(--main-text);       
+    color: getColor("main-text");       
 }
 $colors: (
     "main-text":#757575,
@@ -13,6 +13,8 @@ $colors: (
     "blue-text":#2196F3,
     "white-text":#fff,
     "team-bg": #F5F4FA,
+    "black-text":#afb1b8,
+    "hell-black":#2f303a80,
 
 );
 @function getColor($key){

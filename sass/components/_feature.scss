@@ -17,7 +17,7 @@
       width: 270px; 
       height: 120px; 
       border-radius: 4px;
-      background-color:#F5F4FA;
+      background-color:getColor("team-bg");
       background-repeat:   no-repeat ; 
       background-position: center;
       margin-bottom: 30px; 
@@ -43,7 +43,7 @@
         width: 270px; 
         height: 120px; 
         border-radius: 4px;
-        background-color:#F5F4FA;
+        background-color:getColor("team-bg");
         background-repeat:   no-repeat ; 
         background-position: center;
         margin-bottom: 30px; 

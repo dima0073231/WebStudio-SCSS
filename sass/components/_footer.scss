@@ -71,31 +71,6 @@
         top: -80px;
     }
 }
-.social-list{
-    &__item{
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__svg{
-        background-color: #ffffff10;
-        display: flex;
-        margin: 5px;
-        justify-content: center;
-        align-items: center;
-        width: 44px;
-        height: 44px;
-        border: 2px solid none;
-        border-radius: 50%;
-        &:hover{
-            background-color: getColor("blue-text");
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    }
-    &__icon--footer{
-        width: 20px;
-        height: 20px;
-        fill: #fff;
-     }
-}
 
 .footer-right{
     padding-top: 15px;
