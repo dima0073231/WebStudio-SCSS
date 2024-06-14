@@ -3,12 +3,9 @@
 }
 
 .company-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    @extend %flex-between;
     &__svg {
-        display: flex;
+        @extend %flex-center;
     }
 
     &__img {

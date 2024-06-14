@@ -12,6 +12,7 @@
     margin-right:95px;
    &__web {
         color: getColor("blue-text");
+        @include text(26px, 700, normal, 0.78px);
         font-size: 26px;
         font-family: "Raleway",sans-serif;
         font-weight: 700;

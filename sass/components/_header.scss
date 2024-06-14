@@ -1,12 +1,15 @@
 .header {
-    padding: 24px 0 25px;
+    display: flex;
+    padding: 24px 0;
     &__spacer {
-        display: flex;
-        justify-content: space-between;
-        width: 518px;
-        align-items: center;
+      display: flex;
+      gap: 93px;
     }
-}
+    & .container {
+      @extend %flex-center;
+      gap: 312px;
+    }
+  }
 
 
 
@@ -30,13 +33,12 @@
 
 
 .contact-list {
-    display: flex;
+   @extend %flex-center;
     gap: 50px;
 }
 
 .contact-list__item {
-    display: flex;
-    align-items: center;
+    @extend %flex-center;
     animation-name: rotateInDownRight;
     animation-duration: 1s;
 }
@@ -66,10 +68,7 @@
 }
 
 .logo {
-    font-size: 26px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.78px;
+    @include text(26px, 700, normal, 0.78px);
     word-wrap: break-word;
 }
 
@@ -89,14 +88,12 @@
 
 .navigation {
     color: getColor("gray-text");
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
+    @include text(14px, 500, normal, 0.28px);
     word-wrap: break-word;
 }
 
 .navigation-list {
-    display: flex;
+    @extend %flex-center;
     gap: 50px;
     &__item--current {
         color: getColor("blue-text");
