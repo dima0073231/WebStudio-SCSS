@@ -10,9 +10,7 @@
       overflow: hidden;
   }
     &__link{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+      @extend %flex-center;
       width: 45px;
       height: 45px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

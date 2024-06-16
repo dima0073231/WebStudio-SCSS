@@ -4,11 +4,8 @@
     &__title{
         margin-bottom: 50px;
         color: getColor("gray-text");
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 1.08px;
+   @extend %flex-center;
+    @include text(36px, 700, $fst:normal, $ls:1.08px);
     }
 }
 .box-list{
@@ -29,7 +26,7 @@
            left: 0;
            width: 100%;
            height: 70px;
-           background-color: getColor("hell-text");
+           background-color: getColor("hell-black");
            @include text(14px, $ls:0.03em, $tt:uppercase);
         color: getColor("white-text");
         @extend %flex-center;

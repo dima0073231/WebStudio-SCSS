@@ -3,23 +3,15 @@
     background-image:  url(../images/img.jpg);
     &__title {
         color: getColor("white-text");
-        font-size: 44px;
-        font-weight: 900;
-        text-transform: uppercase;
-        line-height: 1.36;
-        letter-spacing: 2.64px;
+        @include text(44px, 900, 1.36, 2.64px, $tt:uppercase, $ta:center);
         word-wrap: break-word;
         margin: 0 0 30px;
-       text-align: center;
         width: 696px;
         margin: 0 auto 30px;
     }
     &__btn {
         color: getColor("white-text");
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.87;
-        letter-spacing: 0.96px;
+        @include text(16px, 700, 1.87, 0.96px, $ta:center);
         word-wrap: break-word;
         background-color: getColor("blue-text");
         border-radius: 4px;

@@ -21,17 +21,11 @@
         margin-left: -8px;
     }
     &__title {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 6%;
+        @include text(18px, 700, 2,6%);
         color: getColor("gray-text");
     }
     &__text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.875;
-        letter-spacing: 3%;
+        @include text(16px, 400,1.875, 3%);
         color: getColor("main-text");
         padding-left: 20px;
     }
@@ -49,10 +43,7 @@ transition: transform 250ms ease;
 background-color:rgba(33, 150, 243, 0.9); 
 padding: 63px 24px;
 &__text{
-    font-weight: 14;
-   font-size: 18px;
-   line-height: 1.5;
-letter-spacing: 0.03em;
+    @include text(18px, 14, 1.5, 0.03em);
    color:getColor("white-text");
 } 
 }

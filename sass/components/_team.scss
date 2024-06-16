@@ -3,12 +3,9 @@
     background-color: getColor("team-bg");
     &__title {
         color:getColor("gray-text");
-        font-size: 36px;
-        font-weight: 700;
-        letter-spacing: 1.08px;
+        @include text(36px, 700, $ls:1.08px, $ta:center);
         word-wrap: break-word;
         margin-bottom: 50px;
-        text-align: center;
     }
 }
 .team-list{
@@ -23,17 +20,13 @@
     }
     &__name {
         color: getColor("gray-text");
-        font-size: 16px;
-        font-weight: 500;
-        letter-spacing: 0.48px;
+        @include text(16px, 500, $ls:0.48px, $ta:center);
         word-wrap: break-word;
         margin-bottom: 15px;
         margin-top: 30px;
     }
     &__work {
-        font-size: 16px;
-     font-weight: 400;
-        letter-spacing: 0.48px;
+        @include text(16px, 400,$ls:0.48px, $ta:center);
         word-wrap: break-word;
         color: getColor("main-text");
         margin-bottom: 20px;
@@ -49,12 +42,9 @@
 }
 .footer-join__title{
     color: getColor("white-text");
-    font-weight: 700;
-font-size: 14px;
-    letter-spacing: 0.03px;
+    @include text(14px, 700,$ls:0.03em, $tt:uppercase);
     word-wrap:break-word;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 
 
