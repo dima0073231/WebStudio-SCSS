@@ -1,5 +1,9 @@
 .team{
-    padding:94px 0 ;
+    display: none;
+    @media (min-width:1200px) {
+        display: block;
+        padding:94px 0 ;
+    }
     background-color: getColor("team-bg");
     &__title {
         color:getColor("gray-text");

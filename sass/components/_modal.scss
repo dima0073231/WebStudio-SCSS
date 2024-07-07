@@ -115,6 +115,32 @@
         margin-top: 4px;
     
     }
+    @media (min-width: 320px) and (max-width: 480px) {
+        .modal {
+          width: 90%;
+        }
+      }
+      @media (min-width: 320px) and (max-width: 469px) {
+        .modal {
+          padding: 15px;
+        }
+      }
+      @media (min-width: 768px) {
+        .modal {
+          min-width: 450px;
+        }
+      }
+      @media (min-width: 481px) and (max-width: 767px) {
+        .modal {
+          min-width: 450px;
+        }
+      }
+      @media (min-width: 1024px) {
+        .modal {
+          min-width: 528px;
+          min-height: 581px;
+        }
+    }
 }
 
 

@@ -1,12 +1,19 @@
-.box{
-    padding-bottom:94px;  
+.box{  
+    display: none;
+    @media (min-width:1200px) {
+      display: block;
+      padding-bottom:94px;    
+    }
+
     
     &__title{
+        
         margin-bottom: 50px;
         color: getColor("gray-text");
    @extend %flex-center;
     @include text(36px, 700, $fst:normal, $ls:1.08px);
     }
+
 }
 .box-list{
     &__title{

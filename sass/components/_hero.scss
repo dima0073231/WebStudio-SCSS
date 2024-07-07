@@ -1,13 +1,21 @@
 .hero{
-    padding: 200px 0;
+    padding: 118px 0;
+    
     background-image:  url(../images/img.jpg);
+    @media (min-width:1200px){
+        padding: 200px 0;
+    }
     &__title {
         color: getColor("white-text");
-        @include text(44px, 900, 1.36, 2.64px, $tt:uppercase, $ta:center);
+        @include text(26px, 900, 1.36, 2.64px, $tt:uppercase, $ta:center);
         word-wrap: break-word;
         margin: 0 0 30px;
-        width: 696px;
+        max-width: 360px;
         margin: 0 auto 30px;
+        @media (min-width:1200px){
+           font-size: 44px;
+           max-width: 696px;
+        }
     }
     &__btn {
         color: getColor("white-text");
@@ -15,10 +23,13 @@
         word-wrap: break-word;
         background-color: getColor("blue-text");
         border-radius: 4px;
-        width: 216px;
+        width: 200px;
     height: 50px;
     margin: 0 auto;
     display:block;
+    @media (min-width:1200px){
+        width:216px;
+    }
     }
 
    

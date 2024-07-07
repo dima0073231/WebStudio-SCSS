@@ -3,10 +3,21 @@ body {
     color: geyColor("main-text");
 }
 .container {
-    width: 1200px;
+    @media(min-width:768px){
+        max-width: 768px;
+    }
+    @media(min-width:1200px){
+        max-width: 1200px;
+    }
+    min-width: 320px;
+    width: 100%;
+    max-width: 767;
     padding: 0 15px;
     margin: 0 auto;
    
+}
+.header, .main, .footer{
+    min-width: 320px;
 }
 
 ul {
@@ -27,4 +38,6 @@ button{
 }
 .header .container {
     @extend %flex-center;
+   
+ 
 }
