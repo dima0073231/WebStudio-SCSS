@@ -1,26 +1,54 @@
 .team{
-    display: none;
+    padding: 60px 0;
     @media (min-width:1200px) {
-        display: block;
-        padding:94px 0 ;
+       padding:94px 0 ;
     }
     background-color: getColor("team-bg");
     &__title {
         color:getColor("gray-text");
-        @include text(36px, 700, $ls:1.08px, $ta:center);
+        @include text(28px, 700, $ls:1.08px, $ta:center);
         word-wrap: break-word;
-        margin-bottom: 50px;
-    }
+        margin-bottom: 30px;
+        @media (min-width:1200px) {
+            margin-bottom: 50px;
+            font-size: 36px;
+        }
+    
+    
+}
+
 }
 .team-list{
     &__item{
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
         background-color:getColor("white-text");
        border-radius: 5px;
-       padding-bottom: 30px;
+       padding-bottom: 24px;
+       @media (min-width:768px) {
+        flex-basis: calc((100% - 30px) / 2);
+       }
+    @media (min-width:1200px) {
+           flex-basis: calc((100% - 90px) / 4);
+             padding-bottom: 30px;
+            }
 
+
+    }
+    &__thumb{
+        width: 100%;
+        height: 460px;
+        margin-bottom: 30px;
+        @media (min-width:768px) {
+            height: 374px;
+            
+        }
+        @media (min-width:1200px) {
+            height: 260px;
+        }
+    
     }
     &__name {
         color: getColor("gray-text");
@@ -33,8 +61,10 @@
         @include text(16px, 400,$ls:0.48px, $ta:center);
         word-wrap: break-word;
         color: getColor("main-text");
-        margin-bottom: 20px;
+        margin-bottom: 16px; 
     }
+
+
 
 }
 
