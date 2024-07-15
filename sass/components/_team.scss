@@ -19,11 +19,11 @@
 
 }
 .team-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     &__item{
-       
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex: 1 1 100%;
         background-color:getColor("white-text");
        border-radius: 5px;
        padding-bottom: 24px;

@@ -6,6 +6,8 @@
     
 }
 .feature-list{
+   display: flex;
+   flex-wrap: wrap;
    &__title {
       color: getColor("gray-text");
       @include text(14px, 700,  $ta:center,$tt:uppercase, $ls:0.42px);

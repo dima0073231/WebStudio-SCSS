@@ -6,10 +6,20 @@
 .footer .container{
     display: flex;
     position: relative;
+    gap: 60px;
+    @media (min-width:1200px) {
+        justify-content: space-between;
+        gap: 0;
+        
+    }
     
 }
 .footer__left{
     margin-right:95px;
+    text-align: center;
+    @media (min-width:1200px) {
+       text-align: left; 
+    }
    &__web {
         color: getColor("blue-text");
         @include text(26px, 700, normal, 0.78px);
@@ -31,10 +41,13 @@
     padding-top: 15px;
     &__title{
         color: getColor("white-text");
-        @include text(14px, 700, $ls:0.03em);
+        @include text(14px, 700, $ls:0.03em, $ta:center );
         word-wrap:break-word;
         margin-bottom: 20px;
         text-transform: uppercase;
+        @media (min-width:1200px) {
+            text-align: left;
+           }
     }
 }
 
@@ -45,6 +58,11 @@
     display: flex;
     flex-direction: column;
     gap:9px;
+    align-items: center;
+    @media (min-width:1200px) {
+        align-items: flex-start;
+        gap:9px;
+    }
     &__text {
         color: getColor("white-text");
         @include text(14px, 400,1.71, 0.42px);
@@ -66,10 +84,11 @@
         align-items: flex-end;
     }
     &__title{
-        @include text(14px, $ls:0.03em);
+        @include text(14px, $ls:0.03em, );
            text-transform:uppercase ;
            color: getColor("white-text");
            margin-bottom: 20px;
+        
        }
        &__input{
         border: 1px solid rgba(255, 255, 255, 0.60);

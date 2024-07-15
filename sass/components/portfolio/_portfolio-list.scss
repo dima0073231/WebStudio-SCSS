@@ -4,6 +4,7 @@
     margin: 0 auto;
     row-gap: 20px;
     justify-content: space-between;
+    flex: 1 1 100%;
     &__item {
         border: 1px solid #EEE;
         background-color: getColor("white-text");

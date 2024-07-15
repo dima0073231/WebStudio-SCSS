@@ -64,11 +64,24 @@
     text-align: center;
 
 }
+.contact-block {
+  display: none;
+  @media(min-width:768px){
+    @include text(14px, 500, $ls:0.28px);
+    word-wrap: break-word;
+  } 
+  
+}
 
 
 .contact-list {
-   @extend %flex-center;
+  @extend %flex-center;
+  flex-direction: column;
+  flex-wrap: wrap;
     gap: 50px;
+    @media (min-width:1200px) {
+      flex-direction: row;
+    }
 }
 
 .contact-list__item {
@@ -293,9 +306,3 @@
 }
 
 
-.contact-block {
-  @media(min-width:768px){
-    @include text(14px, 500, $ls:0.28px);
-    word-wrap: break-word;
-  } 
-}
