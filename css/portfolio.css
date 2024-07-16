@@ -469,6 +469,11 @@ button {
   justify-content: space-between;
   flex: 1 1 100%;
 }
+@media (min-width: 1200px) {
+  .portfolio-list {
+    padding: 0 0 94px 0;
+  }
+}
 .portfolio-list__item {
   border: 1px solid #EEE;
   background-color: #fff;
@@ -725,24 +730,45 @@ button {
 }
 
 .footer-right {
+  min-width: 290px;
+  width: 100%;
+  max-width: 450px;
   padding-top: 15px;
+}
+@media (min-width: 1200pxd) {
+  .footer-right {
+    max-width: 570px;
+  }
 }
 .footer-right__form {
   display: flex;
   align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .footer-right__form {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 .footer-right__title {
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
   text-transform: none;
   text-decoration: none;
   font-style: normal;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .footer-right__title {
+    text-align: left;
+  }
 }
 .footer-right__input {
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -763,6 +789,11 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.062745098);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 1199px) {
+  .footer-right__input {
+    margin-bottom: 20px;
+  }
 }
 .footer-right__btn {
   border-radius: 5px;

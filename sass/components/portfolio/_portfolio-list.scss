@@ -5,6 +5,9 @@
     row-gap: 20px;
     justify-content: space-between;
     flex: 1 1 100%;
+    @media (min-width: 1200px) {
+        padding: 0 0 94px 0;
+      }
     &__item {
         border: 1px solid #EEE;
         background-color: getColor("white-text");
