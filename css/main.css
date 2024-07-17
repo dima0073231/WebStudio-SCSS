@@ -412,6 +412,7 @@ button {
 .hero {
   padding: 118px 0;
   background-image: url(../images/img.jpg);
+  background-repeat: no-repeat;
 }
 @media (min-width: 1200px) {
   .hero {
@@ -658,7 +659,7 @@ button {
 }
 
 .feature {
-  padding: 60 px 0;
+  padding: 60px 0;
 }
 @media (min-width: 1200px) {
   .feature {
@@ -838,6 +839,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
 }
 .team-list__item {
   flex: 1 1 100%;
@@ -870,6 +872,16 @@ button {
   .team-list__thumb {
     height: 260px;
   }
+}
+.team-list__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-fit: center;
+     object-fit: center;
+  -o-object-position: top center;
+     object-position: top center;
 }
 .team-list__name {
   color: #212121;
