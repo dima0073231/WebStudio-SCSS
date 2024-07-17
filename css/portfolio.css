@@ -475,6 +475,7 @@ button {
   }
 }
 .portfolio-list__item {
+  flex: 1 1 100%;
   border: 1px solid #EEE;
   background-color: #fff;
   flex-basis: calc((100% - 60px) / 3);
@@ -614,16 +615,25 @@ button {
   background-color: #2F303A;
   display: flex;
 }
+@media (min-width: 1200px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
 
 .footer .container {
   display: flex;
   position: relative;
   gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 @media (min-width: 1200px) {
   .footer .container {
     justify-content: space-between;
     gap: 0;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 }
 

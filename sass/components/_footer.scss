@@ -2,14 +2,21 @@
     padding: 60px 0;
     background-color: #2F303A;
     display: flex;
+    @media (min-width: 1200px) {
+        flex-wrap: wrap;
+      }
 }
 .footer .container{
     display: flex;
     position: relative;
     gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
     @media (min-width:1200px) {
         justify-content: space-between;
         gap: 0;
+        flex-wrap: nowrap;
+        align-items: center;
         
     }
     
