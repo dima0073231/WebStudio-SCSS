@@ -81,6 +81,7 @@ button {
 .header__spacer {
   display: flex;
   gap: 93px;
+  text-align: left;
 }
 @media (max-width: 790px) {
   .header__spacer {

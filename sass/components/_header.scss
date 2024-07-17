@@ -11,6 +11,7 @@
     &__spacer {
       display: flex;
       gap: 93px;
+      text-align: left;
       @media (max-width: 790px) {
         gap: 40px;
       }
