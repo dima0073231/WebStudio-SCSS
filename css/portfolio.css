@@ -467,8 +467,9 @@ button {
   flex-wrap: wrap;
   margin: 0 auto;
   row-gap: 20px;
+  gap: 30px;
   justify-content: space-between;
-  flex: 1 1 100%;
+  padding: 0 0 60px 0;
 }
 @media (min-width: 1200px) {
   .portfolio-list {
@@ -479,10 +480,19 @@ button {
   flex: 1 1 100%;
   border: 1px solid #EEE;
   background-color: #fff;
-  flex-basis: calc((100% - 60px) / 3);
   padding-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .portfolio-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .portfolio-list__item:hover .overlay-informatoin {
   transform: translateX(0);
@@ -539,12 +549,19 @@ button {
 }
 
 .thumb {
+  width: 100%;
+  height: 294px;
   position: relative;
   overflow: hidden;
 }
 
 .portfolio__img {
-  gap: 30px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .card::before {
@@ -746,7 +763,7 @@ button {
   max-width: 450px;
   padding-top: 15px;
 }
-@media (min-width: 1200pxd) {
+@media (min-width: 1200px) {
   .footer-right {
     max-width: 570px;
   }
@@ -826,10 +843,16 @@ button {
   border: none;
 }
 .footer-right__svg {
-  width: 21px;
-  height: 21px;
+  max-width: 24px;
+  max-height: 24px;
   top: 1px;
   left: 7px;
   fill: #fff;
   margin-left: 10px;
+}
+@media (min-width: 1200px) {
+  .footer-right__svg {
+    max-width: 21px;
+    max-height: 21px;
+  }
 }/*# sourceMappingURL=portfolio.css.map */
