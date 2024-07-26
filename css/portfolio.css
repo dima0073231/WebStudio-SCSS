@@ -699,6 +699,7 @@ button {
 @media (min-width: 1200px) {
   .footer-join {
     margin-right: 90px;
+    margin-bottom: 50px;
   }
 }
 .footer-join__title {
@@ -770,6 +771,7 @@ button {
 @media (min-width: 1200px) {
   .footer-right {
     max-width: 570px;
+    margin-top: 18px;
   }
 }
 .footer-right__form {
@@ -810,10 +812,8 @@ button {
 .footer-right__input {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
-  width: 360px;
+  width: 450px;
   height: 50px;
-  max-width: 450px;
-  margin-right: 12px;
   padding: 13px 15px;
   font-size: 16px;
   font-weight: 400;
@@ -831,11 +831,17 @@ button {
 @media (max-width: 1199px) {
   .footer-right__input {
     margin-bottom: 20px;
-    max-width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-right__input {
+    margin-right: 120px;
+    margin-bottom: 20px;
   }
 }
 .footer-right__btn {
   border-radius: 5px;
+  margin-right: 125px;
   width: 200px;
   padding: 10px 31px;
   font-size: 16px;
