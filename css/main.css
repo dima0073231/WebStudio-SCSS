@@ -1033,7 +1033,6 @@ button {
 .footer {
   padding: 60px 0;
   background-color: #2F303A;
-  display: flex;
 }
 @media (min-width: 1200px) {
   .footer {
@@ -1043,7 +1042,6 @@ button {
 
 .footer .container {
   display: flex;
-  position: relative;
   gap: 60px;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -1052,18 +1050,17 @@ button {
   .footer .container {
     justify-content: space-between;
     gap: 0;
-    flex-wrap: nowrap;
     align-items: center;
   }
 }
 
 .footer__left {
-  margin-right: 95px;
   text-align: center;
 }
 @media (min-width: 1200px) {
   .footer__left {
     text-align: left;
+    margin-right: 95px;
   }
 }
 .footer__left__web {
@@ -1072,7 +1069,7 @@ button {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  text-align: left;
+  text-align: center;
   text-transform: none;
   text-decoration: none;
   font-style: normal;
@@ -1080,6 +1077,11 @@ button {
   word-wrap: break-word;
   margin-bottom: 20px;
   display: block;
+}
+@media (min-width: 1200px) {
+  .footer__left__web {
+    text-align: left;
+  }
 }
 .footer__left__studio {
   color: #fff;
@@ -1096,8 +1098,12 @@ button {
 }
 
 .footer-join {
-  margin-right: 90px;
   padding-top: 15px;
+}
+@media (min-width: 1200px) {
+  .footer-join {
+    margin-right: 90px;
+  }
 }
 .footer-join__title {
   color: #fff;
@@ -1210,6 +1216,7 @@ button {
   border-radius: 4px;
   width: 360px;
   height: 50px;
+  max-width: 450px;
   margin-right: 12px;
   padding: 13px 15px;
   font-size: 16px;
@@ -1228,6 +1235,7 @@ button {
 @media (max-width: 1199px) {
   .footer-right__input {
     margin-bottom: 20px;
+    max-width: 450px;
   }
 }
 .footer-right__btn {
