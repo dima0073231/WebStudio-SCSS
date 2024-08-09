@@ -30,8 +30,10 @@
                 <a href="./index.html" class=" logo header-spacer__logo">
                     Web<span class="header-spacer__logo header-spacer__logo--studio">Studio</span>
                 </a>
+               
                 <nav class="navigation">
                   
+          
                     <ul class="navigation-list">
                         <li class="navigation-list__item navigation-list__item--current">
                             <a href="./index.html" class=" navigation-link">Студія
@@ -48,7 +50,8 @@
                     </ul>
 
                 </nav>
-
+            
+           
             </div>
 
             <div class="contact-block">
@@ -75,6 +78,27 @@
                        </li>
                 </ul>
             </div>
+            <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              class="menu-svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+  
         </div>
     </header>
 
@@ -485,13 +509,14 @@
                         
                         </form>
                     </div>
-                    <div class="menu-container">
+                    <div class="menu-container js-menu-container">
                         <button
-                          class="menu-toggle js-open-menu"
+                          class="menu-toggle js-close-menu"
                           aria-expanded="false"
                           aria-controls="mobile-menu"
                         >
                           <svg
+                          class="menu-svg"
                             width="24"
                             height="24"
                             fill="currentColor"
@@ -517,27 +542,28 @@
                             </li>
                           </ul>
                           <ul class="menu-contacts">
-                            <li class="menu-contacts__item">
-                              <a
-                                href="mailto:info@devstudio.com"
-                                class="social-link menu-contacts__link"
-                                >info@devstudio.com</a
-                              >
-                            </li>
+                            
                             <li class="menu-contacts__item">
                               <a
                                 href="tel:+380961111111"
-                                class="social-link menu-contacts__link menu-contacts__link--big"
+                                class="menu-contacts__link menu-contacts__link--big"
                                 >+38 096 111 11 11</a
                               >
                             </li>
+                            <li class="menu-contacts__item">
+                                <a
+                                  href="mailto:info@devstudio.com"
+                                  class="menu-contacts__link menu-contacts__link--mail"
+                                  >info@devstudio.com</a
+                                >
+                              </li>
                           </ul>
                 
-                        <ul class="menu">
-                          <li><a href="" class="menu__link">Instagram</a></li>
-                          <li><a href="" class="menu__link">Twitter</a></li>
-                          <li><a href="" class="menu__link">Facebook</a></li>
-                          <li><a href="" class="menu__link">LinkedIn</a></li>
+                        <ul class="menu-network">
+                          <li class="menu-network__item"><a href="#" class="menu-network__link">Instagram</a></li>
+                          <li class="menu-network__item"><a href="#" class="menu-network__link">Twitter</a></li>
+                          <li class="menu-network__item"><a href="#" class="menu-network__link">Facebook</a></li>
+                          <li class="menu-network__item"><a href="#" class="menu-network__link">LinkedIn</a></li>
                         </ul>
                       </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
