@@ -1,40 +1,72 @@
-.hero{
+.hero {
     padding: 118px 0;
-    
-    background-image:  url(../images/img.jpg);
     background-repeat: no-repeat;
-    @media (min-width:1200px){
-        padding: 200px 0;
+    background-image: url("../images/img-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../images/img-mobile@2x.jpg");
     }
-    &__title {
-        color: getColor("white-text");
-        @include text(26px, 900, 1.36, 2.64px, $tt:uppercase, $ta:center);
-        word-wrap: break-word;
-        margin: 0 0 30px;
-        max-width: 360px;
-        margin: 0 auto 30px;
-        @media (min-width:1200px){
-           font-size: 44px;
-           max-width: 696px;
+
+    @media (min-width: 768px) {
+        background-image: url("../images/img-tablet.jpg");
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../images/img-tablet@2x.jpg");
         }
     }
-    &__btn {
-        color: getColor("white-text");
-        @include text(16px, 700, 1.87, 0.96px, $ta:center);
-        word-wrap: break-word;
-        background-color: getColor("blue-text");
-        border-radius: 4px;
-        width: 200px;
-    height: 50px;
-    margin: 0 auto;
-    display:block;
-    @media (min-width:1200px){
-        width:216px;
+
+    @media (min-width: 1200px) {
+        padding: 200px 0;
+        background-image: url("../images/img-desktop.jpg");
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../images/img-desktop@2x.jpg");
+        }
     }
+
+        &__title {
+            color: getColor("white-text");
+            @include text(26px, 900, 1.36, 2.64px, $tt: uppercase, $ta: center);
+            word-wrap: break-word;
+            margin: 0 0 30px;
+            max-width: 360px;
+            margin: 0 auto 30px;
+
+            @media (min-width:1200px) {
+                font-size: 44px;
+                max-width: 696px;
+            }
+        }
+
+        &__btn {
+            color: getColor("white-text");
+            @include text(16px, 700, 1.87, 0.96px, $ta: center);
+            word-wrap: break-word;
+            background-color: getColor("blue-text");
+            border-radius: 4px;
+            width: 200px;
+            height: 50px;
+            margin: 0 auto;
+            display: block;
+
+            @media (min-width:1200px) {
+                width: 216px;
+            }
+        }
+
+
     }
-
-   
-}
-
-    
-
